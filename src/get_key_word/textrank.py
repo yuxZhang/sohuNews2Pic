@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # coding:utf-8
-# auther: zhangyuxiang
+__author__ = '353677403@qq.com'
 import sys
 
 reload(sys)
@@ -10,6 +10,15 @@ from collections import defaultdict
 
 
 def textRank(document, window=6):
+    """function: uss textrank algorithm to find key words of web news.
+
+    Args:
+        document: (list of lists) News contend.
+        window: (int) Window size
+      
+    Return:
+        word_dict: (dict) Words and weights
+    """
     word_dict = defaultdict(lambda :1.0)
     d = 0.85
     for line in document:
