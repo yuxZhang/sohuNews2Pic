@@ -10,7 +10,7 @@ from collections import defaultdict
 
 
 def textRank(document, window=6):
-    """function: uss textrank algorithm to find key words of web news.
+    """function: ues textrank algorithm to find key words of web news.
 
     Args:
         document: (list of lists) News contend.
